@@ -13,10 +13,10 @@ import javax.inject.Inject
 class GetPokemonsUseCase @Inject constructor(
     private val repository: PokemonRepository
 ) {
-    operator fun invoke(): Flow<Resource<PokemonList>> = flow {
+    operator fun invoke(limit: Int): Flow<Resource<PokemonList>> = flow {
         try {
             emit(Resource.Loading<PokemonList>())
-            val pokemons = repository.getPokemons()
+            val pokemons = repository.getPokemons(limit)
             emit(Resource.Success<PokemonList>(pokemons))
         } catch (e: HttpException) {
             emit(Resource.Error<PokemonList>(e.localizedMessage ?: "An unexpected error occured"))

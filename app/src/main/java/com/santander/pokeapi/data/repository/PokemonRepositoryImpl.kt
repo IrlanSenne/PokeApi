@@ -9,8 +9,8 @@ import javax.inject.Inject
 class PokemonRepositoryImpl @Inject constructor(
     private val pokeApi: PokeApi
 ) : PokemonRepository {
-    override suspend fun getPokemons(): PokemonList {
-        return pokeApi.getPokemons()
+    override suspend fun getPokemons(limit: Int): PokemonList {
+        return pokeApi.getPokemons(limit)
     }
 
     override suspend fun getPokemonDetail(name: String): Pokemon {

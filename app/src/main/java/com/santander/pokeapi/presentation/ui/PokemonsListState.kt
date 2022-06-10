@@ -1,4 +1,4 @@
-package com.santander.pokeapi.ui
+package com.santander.pokeapi.presentation.ui
 
 import com.santander.pokeapi.data.remote.Pokemons
 
