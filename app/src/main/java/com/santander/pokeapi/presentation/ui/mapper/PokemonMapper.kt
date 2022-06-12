@@ -22,11 +22,3 @@ fun Pokemons.toUI(): PokemonUI {
         imageUrl = imageUrl
     )
 }
-
-fun PokemonList.toUI(): PokemonListUI {
-    var listPokemons = pokemons.map {
-        it.toUI()
-    }
-
-    return PokemonListUI(listPokemons)
-}
