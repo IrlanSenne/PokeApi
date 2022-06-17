@@ -10,14 +10,15 @@ import androidx.lifecycle.ViewModel
 import androidx.viewbinding.ViewBinding
 import com.santander.pokeapi.presentation.listener.OnSelectListener
 
-abstract class BaseFragment<viewBinding : ViewBinding> : Fragment() {
+abstract class BaseFragment<viewBinding : ViewBinding, VM: ViewModel> : Fragment() {
 
     private var _binding: viewBinding? = null
     private lateinit var _onSelectListener: OnSelectListener
-    private lateinit var _viewModel: ViewModel
+    private lateinit var _mViewModel: VM
 
     protected val binding get() = _binding!!
     protected val onSelectListener get() = _onSelectListener!!
+    protected val mViewModel get() = _mViewModel!!
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -26,11 +27,14 @@ abstract class BaseFragment<viewBinding : ViewBinding> : Fragment() {
 
     protected abstract fun getViewBinding(): viewBinding
 
+    protected abstract fun getViewModel(): VM
+
     protected abstract fun initializeUi()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = getViewBinding()
+        _mViewModel = getViewModel()
     }
 
     override fun onCreateView(
