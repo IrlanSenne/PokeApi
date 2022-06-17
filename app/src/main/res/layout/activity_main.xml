@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_fragment"
+    android:name="com.santander.pokeapi.presentation.ui.PokemonMainFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.ui.MainActivity">
-
-<!--    <fragment-->
-<!--        android:id="@+id/fragment_pokemon_list"-->
-<!--        android:name="com.santander.pokeapi.presentati-->on.ui.PokemonDetailFragment"
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent" />-->
-
-</androidx.fragment.app.FragmentContainerView>
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/main_nav"
+    tools:context=".presentation.ui.MainActivity" />

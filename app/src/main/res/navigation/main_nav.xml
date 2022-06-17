@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/pokemonMainFragment">
+
+    <fragment
+        android:id="@+id/pokemonMainFragment"
+        android:name="com.santander.pokeapi.presentation.ui.PokemonMainFragment"
+        android:label="PokemonMainFragment">
+        <action
+            android:id="@+id/action_pokemonMainFragment_to_pokemonDetailFragment"
+            app:destination="@id/pokemonDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonDetailFragment"
+        android:name="com.santander.pokeapi.presentation.ui.PokemonDetailFragment"
+        android:label="PokemonDetailFragment" >
+        <action
+            android:id="@+id/action_pokemonDetailFragment_to_pokemonMainFragment"
+            app:destination="@id/pokemonMainFragment" />
+    </fragment>
+</navigation>
