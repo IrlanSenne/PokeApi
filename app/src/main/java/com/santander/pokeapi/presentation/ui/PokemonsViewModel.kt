@@ -3,6 +3,7 @@ package com.santander.pokeapi.presentation.ui
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.santander.pokeapi.common.Resource
+import com.santander.pokeapi.data.remote.Pokemons
 import com.santander.pokeapi.domain.use_case.get_pokemons.GetPokemonsUseCase
 import com.santander.pokeapi.presentation.ui.pokemon_main.mapper.toUI
 import com.santander.pokeapi.presentation.ui.model.PokemonUI
@@ -31,15 +32,7 @@ class PokemonsViewModel @Inject constructor(
                 is Resource.Success -> {
                     _pokemonsStateFlow.value = result.data?.pokemons?.map { it.toUI() }
                 }
-                is Resource.Error -> {
-                    //TODO
-                    result.message
-                }
-                is Resource.Loading -> {
-                    //TODO
-                }
             }
-
         }.launchIn(viewModelScope)
     }
 }
