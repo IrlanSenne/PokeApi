@@ -4,6 +4,7 @@ import com.santander.pokeapi.common.Constants
 import com.santander.pokeapi.data.remote.PokeApi
 import com.santander.pokeapi.data.repository.PokemonRepositoryImpl
 import com.santander.pokeapi.domain.repository.PokemonRepository
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
