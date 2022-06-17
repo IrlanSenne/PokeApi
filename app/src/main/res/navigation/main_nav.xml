@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/pokemonMainFragment"
-        android:name="com.santander.pokeapi.presentation.ui.PokemonMainFragment"
+        android:name="com.santander.pokeapi.presentation.ui.pokemon_main.PokemonMainFragment"
         android:label="PokemonMainFragment">
         <action
             android:id="@+id/action_pokemonMainFragment_to_pokemonDetailFragment"
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/pokemonDetailFragment"
-        android:name="com.santander.pokeapi.presentation.ui.PokemonDetailFragment"
+        android:name="com.santander.pokeapi.presentation.ui.pokemon_details.PokemonDetailFragment"
         android:label="PokemonDetailFragment" >
         <action
             android:id="@+id/action_pokemonDetailFragment_to_pokemonMainFragment"

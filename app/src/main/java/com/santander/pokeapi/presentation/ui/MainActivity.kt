@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.santander.pokeapi.R
 import com.santander.pokeapi.databinding.ActivityMainBinding
 import com.santander.pokeapi.presentation.listener.OnSelectListener
+import com.santander.pokeapi.presentation.ui.pokemon_details.PokemonDetailFragment
+import com.santander.pokeapi.presentation.ui.pokemon_main.PokemonMainFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

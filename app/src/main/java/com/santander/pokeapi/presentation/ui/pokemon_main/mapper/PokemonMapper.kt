@@ -1,9 +1,7 @@
-package com.santander.pokeapi.presentation.ui.mapper
+package com.santander.pokeapi.presentation.ui.pokemon_main.mapper
 
 import com.santander.pokeapi.common.Constants.BASE_IMAGE_URL_POKEMON
-import com.santander.pokeapi.data.remote.PokemonList
 import com.santander.pokeapi.data.remote.Pokemons
-import com.santander.pokeapi.presentation.ui.model.PokemonListUI
 import com.santander.pokeapi.presentation.ui.model.PokemonUI
 import java.util.*
 

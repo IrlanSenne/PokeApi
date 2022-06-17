@@ -3,9 +3,8 @@ package com.santander.pokeapi.presentation.ui
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.santander.pokeapi.common.Resource
-import com.santander.pokeapi.data.remote.Pokemons
 import com.santander.pokeapi.domain.use_case.get_pokemons.GetPokemonsUseCase
-import com.santander.pokeapi.presentation.ui.mapper.toUI
+import com.santander.pokeapi.presentation.ui.pokemon_main.mapper.toUI
 import com.santander.pokeapi.presentation.ui.model.PokemonUI
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

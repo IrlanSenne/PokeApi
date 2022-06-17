@@ -3,6 +3,7 @@ package com.santander.pokeapi.presentation.adapter
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.santander.pokeapi.presentation.listener.OnSelectListener
+import com.santander.pokeapi.presentation.view_holder.BaseViewHolder
 
 class BaseAdapter<T : BaseViewHolder<U>, U>(
     private val viewHolderLaunch: (ViewGroup) -> T

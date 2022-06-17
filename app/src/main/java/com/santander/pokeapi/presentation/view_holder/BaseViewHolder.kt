@@ -1,4 +1,4 @@
-package com.santander.pokeapi.presentation.adapter
+package com.santander.pokeapi.presentation.view_holder
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

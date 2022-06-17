@@ -1,4 +1,4 @@
-package com.santander.pokeapi.presentation.ui.widget
+package com.santander.pokeapi.presentation.widget
 
 import android.content.Context
 import android.util.AttributeSet

@@ -1,4 +1,4 @@
-package com.santander.pokeapi.presentation.ui
+package com.santander.pokeapi.presentation.ui.pokemon_main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,8 +10,9 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.santander.pokeapi.databinding.FragmentListPokemonsBinding
 import com.santander.pokeapi.presentation.adapter.BaseAdapter
-import com.santander.pokeapi.presentation.adapter.pokemon.PokemonViewHolder
+import com.santander.pokeapi.presentation.view_holder.pokemon.PokemonViewHolder
 import com.santander.pokeapi.presentation.listener.OnSelectListener
+import com.santander.pokeapi.presentation.ui.PokemonsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 
