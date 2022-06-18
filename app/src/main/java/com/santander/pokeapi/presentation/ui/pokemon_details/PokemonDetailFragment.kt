@@ -1,6 +1,8 @@
 package com.santander.pokeapi.presentation.ui.pokemon_details
 
-import androidx.compose.ui.text.toLowerCase
+import android.R
+import android.view.View
+import android.widget.Toolbar
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.santander.pokeapi.databinding.PokemonDetailsBinding
@@ -25,6 +27,9 @@ class PokemonDetailFragment : BaseFragment<PokemonDetailsBinding, PokemonsViewMo
         PokemonDetailsBinding.inflate(layoutInflater)
 
     override fun initializeUi() {
+        val toolbar = binding.toolbar.root
+        toolbar.setNavigationOnClickListener { activity!!.onBackPressed() }
+
         val bundle = arguments
         val name = bundle?.getString(MainActivity.POKEMON_NAME)
 

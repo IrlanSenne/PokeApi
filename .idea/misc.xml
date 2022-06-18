@@ -3,13 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/drawable/ic_back.xml" value="0.2861111111111111" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/activity_main2.xml" value="0.1984375" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/content_card.xml" value="0.1" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/fragment_list_pokemons.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/item_pokemon.xml" value="0.1" />
-        <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/pokemon_details.xml" value="0.1" />
+        <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/pokemon_details.xml" value="0.2" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/t.xml" value="0.1984375" />
+        <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/toolbar.xml" value="0.1984375" />
       </map>
     </option>
   </component>

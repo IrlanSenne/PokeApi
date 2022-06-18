@@ -4,21 +4,25 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.viewbinding.ViewBinding
 import com.santander.pokeapi.presentation.listener.OnSelectListener
+import android.R
+import android.widget.Toolbar
+
 
 abstract class BaseFragment<viewBinding : ViewBinding, VM: ViewModel> : Fragment() {
 
     private var _binding: viewBinding? = null
     private lateinit var _onSelectListener: OnSelectListener
     private lateinit var _mViewModel: VM
+    private lateinit var _toolBar: Toolbar
 
     protected val binding get() = _binding!!
     protected val onSelectListener get() = _onSelectListener!!
     protected val mViewModel get() = _mViewModel!!
+    protected val toolBar get() = _toolBar!!
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -49,16 +53,5 @@ abstract class BaseFragment<viewBinding : ViewBinding, VM: ViewModel> : Fragment
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
-    }
-
-    protected fun setOnBackPressedCallBack(backPressAction: () -> Unit = {}) {
-
-        val callback: OnBackPressedCallback =
-            object : OnBackPressedCallback(true) {
-                override fun handleOnBackPressed() {
-                    backPressAction()
-                }
-            }
-        requireActivity().onBackPressedDispatcher.addCallback(this, callback)
     }
 }
