@@ -26,9 +26,10 @@ class MainActivity : AppCompatActivity(), OnSelectListener {
         }
     }
 
-    override fun onClickSelected(name: String) {
+    override fun onClickSelected(name: String, url: String) {
         val bundle = Bundle()
         bundle.putString(POKEMON_NAME, name)
+        bundle.putString(POKEMON_URL, url)
 
         val transaction = this.supportFragmentManager.beginTransaction()
         val pokemonDetailFragment = PokemonDetailFragment.newInstance()
@@ -42,5 +43,6 @@ class MainActivity : AppCompatActivity(), OnSelectListener {
     }
     companion object {
         const val POKEMON_NAME = "POKEMON_NAME"
+        const val POKEMON_URL = "POKEMON_URL"
     }
 }

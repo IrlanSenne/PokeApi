@@ -1,5 +1,5 @@
 package com.santander.pokeapi.presentation.listener
 
 interface OnSelectListener {
-    fun onClickSelected(name: String)
+    fun onClickSelected(name: String, url: String)
 }

@@ -15,7 +15,7 @@ class PokemonViewHolder(viewGroup: ViewGroup) : BaseViewHolder<PokemonUI?>(R.lay
             setName(item?.name ?: "")
             setImage(item?.imageUrl ?: "")
             setOnClickListener {
-                listener.onClickSelected(item?.name ?: "")
+                listener.onClickSelected(item?.name ?: "", item?.imageUrl ?: "")
             }
         }
     }
