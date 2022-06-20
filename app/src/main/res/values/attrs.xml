@@ -4,4 +4,8 @@
         <attr name="text" format="string" />
         <attr name="src" format="string" />
     </declare-styleable>
+    <declare-styleable name="PokeProgressBar">
+        <attr name="name" format="string" />
+        <attr name="stat" format="integer" />
+    </declare-styleable>
 </resources>

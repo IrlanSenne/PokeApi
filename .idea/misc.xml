@@ -9,10 +9,13 @@
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/content_card.xml" value="0.1" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/fragment_list_pokemons.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/item_pokemon.xml" value="0.1" />
+        <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/item_stats.xml" value="0.2866847826086957" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/pokemon_details.xml" value="0.2" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/pokemon_details_content.xml" value="0.2866847826086957" />
+        <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/pokemon_details_struture.xml" value="0.17708333333333334" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/t.xml" value="0.1984375" />
         <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/toolbar.xml" value="0.1984375" />
+        <entry key="..\:/Users/imsen/AndroidStudioProjects/PokeApi/app/src/main/res/layout/widget_progress_bar.xml" value="0.21666666666666667" />
       </map>
     </option>
   </component>
