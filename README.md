@@ -7,6 +7,7 @@
 - Kotlin
 - MVVM
 - Retrofit
+- - Hilt
 - Recyclerview
 - Clean Code
 - Generics
