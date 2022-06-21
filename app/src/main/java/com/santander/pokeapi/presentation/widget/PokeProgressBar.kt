@@ -27,5 +27,6 @@ class PokeProgressBar(context: Context, attrs: AttributeSet) : ConstraintLayout(
     fun setValue(name: String, stat: String) {
         binding.tvNameStat.text = name
         binding.pbStat.progress = stat.toInt()
+        binding.tvStat.text = "$stat%"
     }
 }
