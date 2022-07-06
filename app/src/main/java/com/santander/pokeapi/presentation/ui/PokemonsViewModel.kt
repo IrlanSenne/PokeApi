@@ -1,5 +1,6 @@
 package com.santander.pokeapi.presentation.ui
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.santander.pokeapi.common.Resource
@@ -10,10 +11,9 @@ import com.santander.pokeapi.domain.use_case.get_pokemons.GetPokemonsUseCase
 import com.santander.pokeapi.presentation.ui.pokemon_main.mapper.toUI
 import com.santander.pokeapi.presentation.ui.model.PokemonUI
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.launchIn
-import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel

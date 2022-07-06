@@ -1,5 +1,6 @@
 package com.santander.pokeapi.presentation.ui.pokemon_main
 
+import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
